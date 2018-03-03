@@ -4,8 +4,9 @@ phases:
   build:
     commands:
       - echo Build completed on `date`
-      - mvn package
+      - mvn clean install
 
 artifacts:
   files:
-    - target/addservice-0.0.1-SNAPSHOT-install.zip
+    - target/addservice-0.0.1-SNAPSHOT.jar
+	- Dockerfile
